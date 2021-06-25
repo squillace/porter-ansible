@@ -1,5 +1,5 @@
-MIXIN = skeletor
-PKG = get.porter.sh/mixin/$(MIXIN)
+MIXIN = ansible
+PKG = github.com/squillace/porter-ansible
 SHELL = bash
 
 GO = GO111MODULE=on go
@@ -105,4 +105,4 @@ clean: clean-packr
 	-rm -fr bin/
 
 clean-packr: packr2
-	cd pkg/skeletor && packr2 clean
+	cd pkg/ansible && packr2 clean
