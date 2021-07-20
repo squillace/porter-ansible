@@ -2,10 +2,10 @@ package main
 
 import (
 	"github.com/spf13/cobra"
-	"github.com/squillace/porter-ansible/pkg/ansible"
+	"github.com/squillace/porter-awx/pkg/awx"
 )
 
-func buildUpgradeCommand(m *ansible.Mixin) *cobra.Command {
+func buildUpgradeCommand(m *awx.Mixin) *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "upgrade",
 		Short: "Execute the invoke functionality of this mixin",

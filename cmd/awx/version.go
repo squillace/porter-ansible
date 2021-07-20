@@ -3,10 +3,10 @@ package main
 import (
 	"get.porter.sh/porter/pkg/porter/version"
 	"github.com/spf13/cobra"
-	"github.com/squillace/porter-ansible/pkg/ansible"
+	"github.com/squillace/porter-awx/pkg/awx"
 )
 
-func buildVersionCommand(m *ansible.Mixin) *cobra.Command {
+func buildVersionCommand(m *awx.Mixin) *cobra.Command {
 	opts := version.Options{}
 
 	cmd := &cobra.Command{

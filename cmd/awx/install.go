@@ -2,14 +2,14 @@ package main
 
 import (
 	"github.com/spf13/cobra"
-	"github.com/squillace/porter-ansible/pkg/ansible"
+	"github.com/squillace/porter-awx/pkg/awx"
 )
 
 var (
 	commandFile string
 )
 
-func buildInstallCommand(m *ansible.Mixin) *cobra.Command {
+func buildInstallCommand(m *awx.Mixin) *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "install",
 		Short: "Execute the install functionality of this mixin",

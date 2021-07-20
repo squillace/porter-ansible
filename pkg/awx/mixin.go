@@ -1,5 +1,5 @@
 //go:generate packr2
-package ansible
+package awx
 
 import (
 	"get.porter.sh/porter/pkg/context"

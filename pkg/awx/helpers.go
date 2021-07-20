@@ -1,4 +1,4 @@
-package ansible
+package awx
 
 import (
 	"testing"

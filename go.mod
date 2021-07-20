@@ -1,4 +1,4 @@
-module github.com/squillace/porter-ansible
+module github.com/squillace/porter-awx
 
 go 1.13
 

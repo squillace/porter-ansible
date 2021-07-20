@@ -2,10 +2,10 @@ package main
 
 import (
 	"github.com/spf13/cobra"
-	"github.com/squillace/porter-ansible/pkg/ansible"
+	"github.com/squillace/porter-awx/pkg/awx"
 )
 
-func buildSchemaCommand(m *ansible.Mixin) *cobra.Command {
+func buildSchemaCommand(m *awx.Mixin) *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "schema",
 		Short: "Print the json schema for the mixin",

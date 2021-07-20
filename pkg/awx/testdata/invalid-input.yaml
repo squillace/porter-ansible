@@ -1,5 +1,5 @@
 install:
-  - ansible:
+  - awx:
       description: "Invalid Input Test Case"
       args:
       - yarrrr

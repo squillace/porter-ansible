@@ -1,5 +1,5 @@
 install:
-  - ansible:
+  - awx:
       description: "Summon Minion"
       arguments:
       - "man-e-faces"

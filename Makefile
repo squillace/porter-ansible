@@ -1,5 +1,5 @@
-MIXIN = ansible
-PKG = github.com/squillace/porter-ansible
+MIXIN = awx
+PKG = github.com/squillace/porter-awx
 SHELL = bash
 
 GO = GO111MODULE=on go
@@ -105,4 +105,4 @@ clean: clean-packr
 	-rm -fr bin/
 
 clean-packr: packr2
-	cd pkg/ansible && packr2 clean
+	cd pkg/awx && packr2 clean

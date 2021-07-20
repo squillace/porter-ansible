@@ -1,4 +1,4 @@
-package ansible
+package awx
 
 import (
 	"fmt"
@@ -12,9 +12,9 @@ type BuildInput struct {
 	Config MixinConfig
 }
 
-// MixinConfig represents configuration that can be set on the ansible mixin in porter.yaml
+// MixinConfig represents configuration that can be set on the awx mixin in porter.yaml
 // mixins:
-// - ansible:
+// - awx:
 //	  clientVersion: "v0.0.0"
 
 type MixinConfig struct {
@@ -25,9 +25,9 @@ type MixinConfig struct {
 // install required components into
 const dockerfileLines = `RUN apt-get install curl --yes`
 
-// I need the ansible tooling to invoke a recipe on the tower
+// I need the awx tooling to invoke a recipe on the tower
 // awx-cli
-// https://github.com/ansible/awx/blob/devel/INSTALL.md#installing-the-awx-cli
+// https://github.com/awx/awx/blob/devel/INSTALL.md#installing-the-awx-cli
 // Build will generate the necessary Dockerfile lines
 // for an invocation image using this mixin
 func (m *Mixin) Build() error {

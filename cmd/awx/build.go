@@ -2,10 +2,10 @@ package main
 
 import (
 	"github.com/spf13/cobra"
-	"github.com/squillace/porter-ansible/pkg/ansible"
+	"github.com/squillace/porter-awx/pkg/awx"
 )
 
-func buildBuildCommand(m *ansible.Mixin) *cobra.Command {
+func buildBuildCommand(m *awx.Mixin) *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "build",
 		Short: "Generate Dockerfile lines for the bundle invocation image",

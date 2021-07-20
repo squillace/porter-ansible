@@ -4,40 +4,40 @@
     "installStep": {
       "type": "object",
       "properties": {
-        "ansible": {"$ref": "#/definitions/ansible"}
+        "awx": {"$ref": "#/definitions/awx"}
       },
       "required": [
-        "ansible"
+        "awx"
       ],
       "additionalProperties": false
     },
     "upgradeStep": {
       "type": "object",
       "properties": {
-        "ansible": {"$ref": "#/definitions/ansible"}
+        "awx": {"$ref": "#/definitions/awx"}
       },
       "required": [
-        "ansible"
+        "awx"
       ],
       "additionalProperties": false
     },
     "invokeStep": {
       "type": "object",
       "properties": {
-        "ansible": {"$ref": "#/definitions/ansible"}
+        "awx": {"$ref": "#/definitions/awx"}
       },
       "required": [
-        "ansible"
+        "awx"
       ],
       "additionalProperties": false
     },
     "uninstallStep": {
       "type": "object",
       "properties": {
-        "ansible": {"$ref": "#/definitions/ansible"}
+        "awx": {"$ref": "#/definitions/awx"}
       },
       "required": [
-        "ansible"
+        "awx"
       ],
       "additionalProperties": false
     },
@@ -74,7 +74,7 @@
         ]
       }
     },
-    "ansible": {
+    "awx": {
       "type": "object",
       "properties": {
         "description": {

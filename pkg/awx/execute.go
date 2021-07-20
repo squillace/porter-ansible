@@ -1,4 +1,4 @@
-package ansible
+package awx
 
 import (
 	"get.porter.sh/porter/pkg/exec/builder"
