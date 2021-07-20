@@ -106,7 +106,7 @@ type Instruction struct {
 }
 
 func (s Instruction) GetCommand() string {
-	return "ansible"
+	return "awx"
 }
 
 func (s Instruction) GetArguments() []string {

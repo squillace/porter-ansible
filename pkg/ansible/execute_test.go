@@ -25,7 +25,7 @@ func TestMixin_Execute(t *testing.T) {
 		wantCommand string // Full command that you expect to be called based on the input YAML
 	}{
 		{"action", "testdata/step-input.yaml", "VICTORY",
-			"ansible man-e-faces --species human"},
+			"awx man-e-faces --species human"},
 	}
 
 	defer os.Unsetenv(test.ExpectedCommandEnv)
